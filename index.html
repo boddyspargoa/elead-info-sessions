@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>E-LEAD Info Sessions — Marquette University</title>
+<meta name="description" content="Add a Marquette E-LEAD information session to your calendar.">
+<meta name="theme-color" content="#04294C">
+
+<!--
+  ============================================================
+  THINGS YOU MIGHT WANT TO EDIT
+  ============================================================
+  1. ROOM / LOCATION: search this file for "Engineering Hall" and
+     change it in each of the three session blocks. Then change it
+     in the three .ics files too (open them in Notepad / TextEdit,
+     find the LOCATION: line).
+  2. TIMES: change the visible text here, and change the DTSTART /
+     DTEND lines in the matching .ics file. Those are in UTC, which
+     is Central time + 5 hours while daylight saving is in effect.
+     So 4:00 pm Central = 21:00:00 UTC = 210000Z.
+  3. ADDING A FOURTH SESSION: copy one <article class="session">
+     block, and copy one .ics file, and update both.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #04294C;          /* deep Marquette blue, page ground */
+    --ink-raised: #0C3A66;   /* card surface */
+    --ink-line: #1D5288;     /* hairlines */
+    --gold: #FFCC00;         /* Marquette gold, primary action */
+    --gold-deep: #C79A00;
+    --paper: #FFFFFF;
+    --paper-dim: #B9CDE2;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: "Archivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    padding: 0 20px calc(48px + env(safe-area-inset-bottom));
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 34rem; margin: 0 auto; }
+
+  header { padding: 44px 0 30px; }
+
+  .mark {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--gold);
+    margin: 0 0 14px;
+  }
+
+  h1 {
+    font-size: clamp(2.1rem, 10vw, 2.9rem);
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.02;
+    margin: 0 0 14px;
+  }
+
+  .standfirst {
+    margin: 0;
+    color: var(--paper-dim);
+    max-width: 30rem;
+  }
+
+  h2 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 0 0 14px;
+    padding-top: 26px;
+    border-top: 2px solid var(--gold);
+  }
+
+  .session {
+    background: var(--ink-raised);
+    border: 1px solid var(--ink-line);
+    border-radius: 10px;
+    padding: 18px 18px 16px;
+    margin: 0 0 14px;
+  }
+
+  .session .date {
+    font-size: 1.28rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+
+  .session .meta {
+    margin: 3px 0 15px;
+    font-size: 0.94rem;
+    color: var(--paper-dim);
+  }
+
+  .add {
+    display: block;
+    background: var(--gold);
+    color: #241C00;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.02rem;
+    text-align: center;
+    padding: 15px 12px;
+    border-radius: 7px;
+    min-height: 52px;
+  }
+
+  .add:active { background: var(--gold-deep); }
+
+  .alt {
+    display: block;
+    text-align: center;
+    margin-top: 11px;
+    font-size: 0.88rem;
+    color: var(--paper-dim);
+    text-decoration-color: var(--ink-line);
+    text-underline-offset: 3px;
+    padding: 6px;
+  }
+
+  .learn {
+    display: block;
+    margin-top: 26px;
+    padding: 16px 12px;
+    min-height: 52px;
+    border: 2px solid var(--gold);
+    border-radius: 7px;
+    color: var(--paper);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .learn:active { background: rgba(255, 204, 0, 0.14); }
+
+  footer {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid var(--ink-line);
+    font-size: 0.84rem;
+    color: var(--paper-dim);
+  }
+
+  footer p { margin: 0 0 6px; }
+
+  footer a { color: var(--paper-dim); }
+
+  a:focus-visible, .add:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="mark">Marquette University &middot; Opus College of Engineering</p>
+    <h1>E-LEAD information sessions</h1>
+    <p class="standfirst">Three chances this September to hear what E-LEAD is, who it's for, and how to apply. Tap a date to drop it straight into your calendar.</p>
+  </header>
+
+  <main>
+    <h2>Pick a session</h2>
+
+    <!-- ===== Session 1 ===== -->
+    <article class="session">
+      <p class="date">Thursday, September 17</p>
+      <p class="meta">12:00&ndash;1:00 pm &nbsp;&middot;&nbsp; Engineering Hall</p>
+      <a class="add" href="elead-sept17.ics" download>Add to my calendar</a>
+      <a class="alt" href="https://outlook.office.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=E-LEAD%20Info%20Session&location=Engineering%20Hall%2C%20Marquette%20University&startdt=2026-09-17T17%3A00%3A00Z&enddt=2026-09-17T18%3A00%3A00Z&body=Learn%20about%20E-LEAD%3A%20https%3A%2F%2Fwww.marquette.edu%2Fe-lead%2Fabout.php" target="_blank" rel="noopener">Add in Outlook on the web instead</a>
+    </article>
+
+    <!-- ===== Session 2 ===== -->
+    <article class="session">
+      <p class="date">Monday, September 21</p>
+      <p class="meta">4:00&ndash;5:00 pm &nbsp;&middot;&nbsp; Engineering Hall</p>
+      <a class="add" href="elead-sept21.ics" download>Add to my calendar</a>
+      <a class="alt" href="https://outlook.office.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=E-LEAD%20Info%20Session&location=Engineering%20Hall%2C%20Marquette%20University&startdt=2026-09-21T21%3A00%3A00Z&enddt=2026-09-21T22%3A00%3A00Z&body=Learn%20about%20E-LEAD%3A%20https%3A%2F%2Fwww.marquette.edu%2Fe-lead%2Fabout.php" target="_blank" rel="noopener">Add in Outlook on the web instead</a>
+    </article>
+
+    <!-- ===== Session 3 ===== -->
+    <article class="session">
+      <p class="date">Tuesday, September 29</p>
+      <p class="meta">4:00&ndash;5:00 pm &nbsp;&middot;&nbsp; Engineering Hall</p>
+      <a class="add" href="elead-sept29.ics" download>Add to my calendar</a>
+      <a class="alt" href="https://outlook.office.com/calendar/0/deeplink/compose?path=/calendar/action/compose&rru=addevent&subject=E-LEAD%20Info%20Session&location=Engineering%20Hall%2C%20Marquette%20University&startdt=2026-09-29T21%3A00%3A00Z&enddt=2026-09-29T22%3A00%3A00Z&body=Learn%20about%20E-LEAD%3A%20https%3A%2F%2Fwww.marquette.edu%2Fe-lead%2Fabout.php" target="_blank" rel="noopener">Add in Outlook on the web instead</a>
+    </article>
+
+    <a class="learn" href="https://www.marquette.edu/e-lead/about.php">Learn more about E-LEAD</a>
+  </main>
+
+  <footer>
+    <p>Can't make any of these? Email <a href="mailto:elead@marquette.edu">elead@marquette.edu</a> and we'll find a time.</p>
+    <p>All times are Central.</p>
+  </footer>
+
+</div>
+</body>
+</html>

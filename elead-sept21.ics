@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Marquette University//E-LEAD Info Sessions//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:elead-info-sept21-2026@marquette.edu
+DTSTAMP:20260902T120000Z
+DTSTART:20260921T210000Z
+DTEND:20260921T220000Z
+SUMMARY:E-LEAD Info Session
+LOCATION:Engineering Hall\, Marquette University\, 1637 W Wisconsin Ave\, 
+ Milwaukee\, WI 53233
+DESCRIPTION:Come learn about E-LEAD\, Marquette's engineering leadership d
+ evelopment program in the Opus College of Engineering. Bring your questio
+ ns. More info: https://www.marquette.edu/e-lead/about.php
+URL:https://www.marquette.edu/e-lead/about.php
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:E-LEAD Info Session starts in 30 minutes
+END:VALARM
+END:VEVENT
+END:VCALENDAR
